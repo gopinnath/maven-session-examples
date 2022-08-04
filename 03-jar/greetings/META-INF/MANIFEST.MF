@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: tpa.onepam.kingpins.mastery.maven.example.Greetings
+Class-Path: lib/commons-lang3.jar
+Created-By: 11 (Oracle Corporation)
+

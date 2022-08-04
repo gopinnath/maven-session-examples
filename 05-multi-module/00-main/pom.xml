@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+	<groupId>tpa.onepam.kingpins.mastery.maven.example</groupId>
+	<artifactId>05-multi-module</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <groupId>tpa.onepam.kingpins.mastery.maven.example</groupId>
+  <artifactId>00-main</artifactId>
+  <packaging>jar</packaging>
+  <name>Main</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	<revision>0.0.1-SNAPSHOT</revision>
+  </properties>
+
+    <dependencies>
+      <dependency>
+        <groupId>tpa.onepam.kingpins.mastery.maven.example</groupId>
+        <artifactId>01-shape-interface</artifactId>
+        <version>${revision}</version>
+      </dependency>
+	  <dependency>
+        <groupId>tpa.onepam.kingpins.mastery.maven.example</groupId>
+        <artifactId>04-factory</artifactId>
+        <version>${revision}</version>
+      </dependency>
+	  <dependency>
+        <groupId>tpa.onepam.kingpins.mastery.maven.example</groupId>
+        <artifactId>02-circle-implementation</artifactId>
+        <version>${revision}</version>
+		<scope>runtime</scope>
+      </dependency>
+	  <dependency>
+        <groupId>tpa.onepam.kingpins.mastery.maven.example</groupId>
+        <artifactId>03-square-implementation</artifactId>
+        <version>${revision}</version>
+		<scope>runtime</scope>
+      </dependency>		  
+	</dependencies>
+</project>  
